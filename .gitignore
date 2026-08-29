@@ -1,0 +1,13 @@
+# Environment
+.DS_Store
+.env
+
+# Data directories
+data/
+
+# Output directories
+output/
+
+# Python files
+create_olist_notebook.py
+create_instacart_notebook.py
