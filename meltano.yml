@@ -1,0 +1,84 @@
+default_environment: dev
+project_id: 01a04698-189f-7038-8210-63dd686d6375
+environments:
+- name: dev
+- name: staging
+- name: prod
+python: python3.11
+plugins:
+  extractors:
+  - name: tap-github
+    variant: meltanolabs
+    pip_url: meltanolabs-tap-github
+    config:
+      repositories:
+      - prakash4956/Module_2_Test
+  - name: tap-csv
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-csv.git
+    config:
+      files:
+      - entity: olist_customers
+        path: data/olist_customers_dataset.csv
+        keys:
+        - customer_id
+
+      - entity: olist_orders
+        path: data/olist_orders_dataset.csv
+        keys:
+        - order_id
+
+      - entity: olist_order_items
+        path: data/olist_order_items_dataset.csv
+        keys:
+        - order_id
+        - order_item_id
+
+      - entity: olist_order_payments
+        path: data/olist_order_payments_dataset.csv
+        keys:
+        - order_id
+        - payment_sequential
+
+      - entity: olist_order_reviews
+        path: data/olist_order_reviews_dataset.csv
+        keys:
+        - review_id
+        - order_id
+
+      - entity: olist_products
+        path: data/olist_products_dataset.csv
+        keys:
+        - product_id
+
+      - entity: olist_sellers
+        path: data/olist_sellers_dataset.csv
+        keys:
+        - seller_id
+
+      - entity: product_category_name_translation
+        path: data/product_category_name_translation.csv
+        keys:
+        - category_name
+
+      - entity: olist_geolocation
+        path: data/olist_geolocation_dataset.csv
+        keys:
+        - geolocation_zip_code_prefix
+  loaders:
+  - name: target-bigquery
+    variant: z3z1ma
+    pip_url: git+https://github.com/z3z1ma/target-bigquery.git
+    config:
+      dataset: ingestion
+      denormalized: true
+      flattening_enabled: true
+      flattening_max_depth: 1
+      method: batch_job
+      project: rock-partition-505312-a6
+      upsert: 'true'
+      column_name_transforms:
+        snake_case: true
+        lower: true
+        add_underscore_when_invalid: true
+      schema_resolver_version: 2
