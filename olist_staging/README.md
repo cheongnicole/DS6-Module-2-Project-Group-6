@@ -9,32 +9,29 @@ It is organized into staging models (cleaning raw data) and marts (business‑re
 
 ```bash
 pip install dbt-bigquery
+```
 
 ## Authenticate with Google Cloud
 ```bash
 gcloud auth application-default login
-
-
 ```
-## 🚀 How to Run dbt
 
+
+## How to Run dbt
 Run all commands from the project root (`DS6-Module-2-Project-Group-6`) and point dbt to `olist_staging`:
 
+### Debug connection
 ```bash
-# Debug connection
 dbt debug --project-dir olist_staging --profiles-dir olist_staging
+```
 
-# Run staging models (views)
-dbt run --project-dir olist_staging --profiles-dir olist_staging --models staging
-
-# Run marts (tables)
-dbt run --project-dir olist_staging --profiles-dir olist_staging --models marts
-
-# Run all models
+### Run staging models
+```bash
 dbt run --project-dir olist_staging --profiles-dir olist_staging
+```
 
-# Run tests
+### Run tests
+```bash
 dbt test --project-dir olist_staging --profiles-dir olist_staging
+```
 
-# Clean target directories
-dbt clean --project-dir olist_staging --profiles-dir olist_staging
