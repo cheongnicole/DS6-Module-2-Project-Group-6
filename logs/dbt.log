@@ -1,0 +1,316 @@
+[0m18:09:26.430451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d69ed96390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d69ed97b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d69ed95850>]}
+
+
+============================== 18:09:26.433563 | 6363472c-cbd5-4b2a-870c-a5911c7213d2 ==============================
+[0m18:09:26.433563 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:09:26.433880 [debug] [MainThread]: running dbt with arguments {'hints_enabled': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'maximum_seed_size_mib': '1', 'log_path': 'logs', 'invocation_command': 'dbt init olist_staging', 'fail_fast': 'False', 'target_path': 'None', 'warn_error': 'None', 'no_print': 'None', 'debug': 'False', 'log_format': 'default', 'version_check': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'write_json': 'True', 'use_colors': 'True', 'profiles_dir': '/home/sipei/.dbt', 'printer_width': '80', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'log_cache_events': 'False'}
+[0m18:09:26.449014 [debug] [MainThread]: Starter project path: /home/sipei/miniconda3/envs/elt_env/lib/python3.11/site-packages/dbt/include/starter_project
+[0m18:09:26.458833 [info ] [MainThread]: Setting up your profile.
+[0m18:10:40.630927 [info ] [MainThread]: Profile olist_staging written to /home/sipei/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m18:10:40.633187 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m18:10:40.633608 [info ] [MainThread]: dbt version: 1.12.3
+[0m18:10:40.633816 [info ] [MainThread]: python version: 3.11.15
+[0m18:10:40.634007 [info ] [MainThread]: python path: /home/sipei/miniconda3/envs/elt_env/bin/python3.11
+[0m18:10:40.634191 [info ] [MainThread]: os info: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m18:10:40.676782 [info ] [MainThread]: Using profiles dir at /home/sipei/.dbt
+[0m18:10:40.677156 [info ] [MainThread]: Using profiles.yml file at /home/sipei/.dbt/profiles.yml
+[0m18:10:40.677320 [info ] [MainThread]: Using dbt_project.yml file at /home/sipei/Module 2/DS6-Module-2-Project-Group-6/olist_staging/dbt_project.yml
+[0m18:10:40.677477 [info ] [MainThread]: adapter type: bigquery
+[0m18:10:40.677620 [info ] [MainThread]: adapter version: 1.12.0
+[0m18:10:40.751103 [info ] [MainThread]: Configuration:
+[0m18:10:40.751544 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:10:40.751741 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:10:40.751937 [info ] [MainThread]: Required dependencies:
+[0m18:10:40.752128 [debug] [MainThread]: Executing "git --help"
+[0m18:10:40.754079 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:10:40.754350 [debug] [MainThread]: STDERR: "b''"
+[0m18:10:40.754507 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:10:40.754666 [info ] [MainThread]: Connection:
+[0m18:10:40.754867 [info ] [MainThread]:   method: oauth
+[0m18:10:40.755013 [info ] [MainThread]:   database: rock-partition-505312-a6
+[0m18:10:40.755149 [info ] [MainThread]:   execution_project: rock-partition-505312-a6
+[0m18:10:40.755302 [info ] [MainThread]:   schema: ingestion
+[0m18:10:40.755433 [info ] [MainThread]:   location: US
+[0m18:10:40.755746 [info ] [MainThread]:   priority: interactive
+[0m18:10:40.755896 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:10:40.756298 [info ] [MainThread]:   reservation: None
+[0m18:10:40.756631 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:10:40.757122 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:10:40.757344 [info ] [MainThread]:   job_retries: 1
+[0m18:10:40.757569 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:10:40.757793 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:10:40.759242 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:10:40.760017 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:10:40.760365 [info ] [MainThread]:   client_id: None
+[0m18:10:40.761087 [info ] [MainThread]:   token_uri: None
+[0m18:10:40.761308 [info ] [MainThread]:   compute_region: None
+[0m18:10:40.761494 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:10:40.761632 [info ] [MainThread]:   gcs_bucket: None
+[0m18:10:40.761781 [info ] [MainThread]:   dataproc_batch: None
+[0m18:10:40.762128 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:10:40.844163 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:10:40.844516 [debug] [MainThread]: On debug: select 1 as id
+[0m18:10:40.844834 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:10:43.863020 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=rock-partition-505312-a6&j=bq:US:0a48259b-f586-4ac4-b110-f07fc18d7c73&page=queryresults
+[0m18:10:43.864710 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:10:43.865312 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:10:43.865620 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Access Denied: Project rock-partition-505312-a6: User does not have bigquery.jobs.create permission in project rock-partition-505312-a6.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:10:43.865974 [info ] [MainThread]: Your new dbt project "olist_staging" was created!
+Initialized new project in /home/sipei/Module 2/DS6-Module-2-Project-Group-6/olist_staging/olist_staging
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:10:43.866404 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m18:10:43.866808 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 77.4858, "process_in_blocks": "488776", "process_kernel_time": 0.495573, "process_mem_max_rss": "232356", "process_out_blocks": "96", "process_user_time": 2.005894}
+[0m18:10:43.867073 [debug] [MainThread]: Command `dbt init` succeeded at 18:10:43.867016 after 77.49 seconds
+[0m18:10:43.867253 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:10:43.867454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d69ed96610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d69ecd9fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d67ea3fd90>]}
+[0m18:10:43.867692 [debug] [MainThread]: Flushing usage events
+[0m18:10:45.601591 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:34:46.703603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790e4ea1c190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790e4ff13490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790e4ea1e150>]}
+
+
+============================== 18:34:46.706580 | 6f3f6d77-0378-4f93-b98d-efa4b5da9220 ==============================
+[0m18:34:46.706580 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:34:46.707163 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'profiles_dir': '/home/sipei/.dbt', 'warn_error': 'None', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'partial_parse': 'True', 'no_print': 'None', 'log_path': 'logs', 'log_format': 'default', 'quiet': 'False', 'fail_fast': 'False', 'printer_width': '80', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'empty': 'None', 'hints_enabled': 'True', 'cache_selected_only': 'False', 'write_json': 'True', 'invocation_command': 'dbt debug', 'maximum_seed_size_mib': '1', 'version_check': 'True', 'target_path': 'None'}
+[0m18:34:46.712626 [info ] [MainThread]: dbt version: 1.12.3
+[0m18:34:46.712890 [info ] [MainThread]: python version: 3.11.15
+[0m18:34:46.713077 [info ] [MainThread]: python path: /home/sipei/miniconda3/envs/elt_env/bin/python3.11
+[0m18:34:46.713239 [info ] [MainThread]: os info: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m18:34:47.330457 [info ] [MainThread]: Using profiles dir at /home/sipei/.dbt
+[0m18:34:47.331207 [info ] [MainThread]: Using profiles.yml file at /home/sipei/.dbt/profiles.yml
+[0m18:34:47.331742 [info ] [MainThread]: Using dbt_project.yml file at /home/sipei/Module 2/DS6-Module-2-Project-Group-6/dbt_project.yml
+[0m18:34:47.332229 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:34:47.332724 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.6744892, "process_in_blocks": "0", "process_kernel_time": 0.380824, "process_mem_max_rss": "228104", "process_out_blocks": "8", "process_user_time": 1.759244}
+[0m18:34:47.333126 [debug] [MainThread]: Command `dbt debug` failed at 18:34:47.333065 after 0.68 seconds
+[0m18:34:47.333355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790e4ea16b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790e4ea0afd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790e4ea0b290>]}
+[0m18:34:47.333641 [debug] [MainThread]: Flushing usage events
+[0m18:34:48.925447 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:41:02.940282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71dee79637d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71dee7977490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71dee7976090>]}
+
+
+============================== 18:41:02.942421 | 46e43bf6-671c-4eb5-861c-e21846a9d4a5 ==============================
+[0m18:41:02.942421 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:41:02.943033 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/home/sipei/.dbt', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'fail_fast': 'False', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'introspect': 'True', 'log_path': 'logs', 'warn_error': 'None', 'quiet': 'False', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'debug': 'False', 'target_path': 'None', 'static_parser': 'True', 'empty': 'None', 'write_json': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'maximum_seed_size_mib': '1'}
+[0m18:41:02.948489 [info ] [MainThread]: dbt version: 1.12.3
+[0m18:41:02.948792 [info ] [MainThread]: python version: 3.11.15
+[0m18:41:02.948999 [info ] [MainThread]: python path: /home/sipei/miniconda3/envs/elt_env/bin/python3.11
+[0m18:41:02.949173 [info ] [MainThread]: os info: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m18:41:03.640665 [info ] [MainThread]: Using profiles dir at /home/sipei/.dbt
+[0m18:41:03.641032 [info ] [MainThread]: Using profiles.yml file at /home/sipei/.dbt/profiles.yml
+[0m18:41:03.641236 [info ] [MainThread]: Using dbt_project.yml file at /home/sipei/Module 2/DS6-Module-2-Project-Group-6/dbt_project.yml
+[0m18:41:03.641468 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:41:03.641817 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.7469149, "process_in_blocks": "0", "process_kernel_time": 0.377535, "process_mem_max_rss": "228424", "process_out_blocks": "8", "process_user_time": 1.813812}
+[0m18:41:03.642176 [debug] [MainThread]: Command `dbt debug` failed at 18:41:03.642118 after 0.75 seconds
+[0m18:41:03.642379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71dee79fedd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71dee7962fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71dee79633d0>]}
+[0m18:41:03.642587 [debug] [MainThread]: Flushing usage events
+[0m18:41:05.143378 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:41:28.418853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768bb3afe0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768bb3afe250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768bb3b00390>]}
+
+
+============================== 18:41:28.421700 | 30998a46-c506-40fa-b6a9-820506374a47 ==============================
+[0m18:41:28.421700 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:41:28.422372 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'use_experimental_parser': 'False', 'static_parser': 'True', 'empty': 'None', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'maximum_seed_size_mib': '1', 'version_check': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/home/sipei/.dbt', 'log_format': 'default', 'log_path': 'logs', 'fail_fast': 'False', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'warn_error': 'None', 'introspect': 'True', 'printer_width': '80', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'no_print': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'log_cache_events': 'False'}
+[0m18:41:28.427525 [info ] [MainThread]: dbt version: 1.12.3
+[0m18:41:28.427820 [info ] [MainThread]: python version: 3.11.15
+[0m18:41:28.428026 [info ] [MainThread]: python path: /home/sipei/miniconda3/envs/elt_env/bin/python3.11
+[0m18:41:28.428234 [info ] [MainThread]: os info: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m18:41:28.954692 [info ] [MainThread]: Using profiles dir at /home/sipei/.dbt
+[0m18:41:28.955068 [info ] [MainThread]: Using profiles.yml file at /home/sipei/.dbt/profiles.yml
+[0m18:41:28.955599 [info ] [MainThread]: Using dbt_project.yml file at /home/sipei/Module 2/DS6-Module-2-Project-Group-6/dbt_project.yml
+[0m18:41:28.956327 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:41:28.957095 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.58393323, "process_in_blocks": "0", "process_kernel_time": 0.278014, "process_mem_max_rss": "228288", "process_out_blocks": "8", "process_user_time": 1.752332}
+[0m18:41:28.957608 [debug] [MainThread]: Command `dbt debug` failed at 18:41:28.957535 after 0.58 seconds
+[0m18:41:28.957842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768bb3af6150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768bb3aeaf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768bb3aeb350>]}
+[0m18:41:28.958065 [debug] [MainThread]: Flushing usage events
+[0m18:41:30.084622 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:43:11.169508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7441a3826310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7441a3818490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7441a3e75010>]}
+
+
+============================== 18:43:11.171529 | f7d06e98-1f08-401d-a2a7-ff5320874dd2 ==============================
+[0m18:43:11.171529 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:43:11.171853 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'invocation_command': 'dbt debug', 'version_check': 'True', 'use_colors': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'maximum_seed_size_mib': '1', 'debug': 'False', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'profiles_dir': '/home/sipei/.dbt', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'hints_enabled': 'True', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'fail_fast': 'False', 'no_print': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'empty': 'None'}
+[0m18:43:11.176869 [info ] [MainThread]: dbt version: 1.12.3
+[0m18:43:11.177133 [info ] [MainThread]: python version: 3.11.15
+[0m18:43:11.177317 [info ] [MainThread]: python path: /home/sipei/miniconda3/envs/elt_env/bin/python3.11
+[0m18:43:11.177502 [info ] [MainThread]: os info: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m18:43:11.763639 [info ] [MainThread]: Using profiles dir at /home/sipei/.dbt
+[0m18:43:11.763996 [info ] [MainThread]: Using profiles.yml file at /home/sipei/.dbt/profiles.yml
+[0m18:43:11.764296 [info ] [MainThread]: Using dbt_project.yml file at /home/sipei/Module 2/DS6-Module-2-Project-Group-6/dbt_project.yml
+[0m18:43:11.764962 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:43:11.765531 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.64075935, "process_in_blocks": "0", "process_kernel_time": 0.291203, "process_mem_max_rss": "228136", "process_out_blocks": "16", "process_user_time": 1.647379}
+[0m18:43:11.766148 [debug] [MainThread]: Command `dbt debug` failed at 18:43:11.766035 after 0.64 seconds
+[0m18:43:11.766416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7441a379e150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7441a378b050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7441a378b450>]}
+[0m18:43:11.766645 [debug] [MainThread]: Flushing usage events
+[0m18:43:13.446588 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:44:32.422158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d75dc118110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d75dc18bd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d75dc1a3dd0>]}
+
+
+============================== 18:44:32.425340 | 2383c8e8-41ff-49cb-92d9-8541e22c2460 ==============================
+[0m18:44:32.425340 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:44:32.425688 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'log_path': 'logs', 'profiles_dir': '/home/sipei/.dbt', 'printer_width': '80', 'warn_error': 'None', 'introspect': 'True', 'no_print': 'None', 'fail_fast': 'False', 'partial_parse': 'True', 'debug': 'False', 'log_format': 'default', 'write_json': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'maximum_seed_size_mib': '1', 'version_check': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'hints_enabled': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:44:32.430576 [info ] [MainThread]: dbt version: 1.12.3
+[0m18:44:32.430840 [info ] [MainThread]: python version: 3.11.15
+[0m18:44:32.431056 [info ] [MainThread]: python path: /home/sipei/miniconda3/envs/elt_env/bin/python3.11
+[0m18:44:32.431239 [info ] [MainThread]: os info: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m18:44:32.965989 [info ] [MainThread]: Using profiles dir at /home/sipei/.dbt
+[0m18:44:32.966609 [info ] [MainThread]: Using profiles.yml file at /home/sipei/.dbt/profiles.yml
+[0m18:44:32.966829 [info ] [MainThread]: Using dbt_project.yml file at /home/sipei/Module 2/DS6-Module-2-Project-Group-6/dbt_project.yml
+[0m18:44:32.967466 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:44:32.967917 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.596371, "process_in_blocks": "0", "process_kernel_time": 0.20924, "process_mem_max_rss": "228148", "process_out_blocks": "8", "process_user_time": 1.677945}
+[0m18:44:32.968499 [debug] [MainThread]: Command `dbt debug` failed at 18:44:32.968405 after 0.60 seconds
+[0m18:44:32.969019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d75dc1a2ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d75dc107050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d75dc107390>]}
+[0m18:44:32.969293 [debug] [MainThread]: Flushing usage events
+[0m18:44:34.651745 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:45:47.685897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76c355901fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76c355980290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76c355905010>]}
+
+
+============================== 18:45:47.687926 | 7ddffabb-6eb5-4da2-b5b0-1da910d24484 ==============================
+[0m18:45:47.687926 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:45:47.688792 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'log_cache_events': 'False', 'write_json': 'True', 'debug': 'False', 'log_path': 'logs', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/sipei/.dbt', 'fail_fast': 'False', 'quiet': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'invocation_command': 'dbt debug', 'no_print': 'None', 'static_parser': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'log_format': 'default'}
+[0m18:45:47.696471 [info ] [MainThread]: dbt version: 1.12.3
+[0m18:45:47.696843 [info ] [MainThread]: python version: 3.11.15
+[0m18:45:47.697110 [info ] [MainThread]: python path: /home/sipei/miniconda3/envs/elt_env/bin/python3.11
+[0m18:45:47.697314 [info ] [MainThread]: os info: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m18:45:48.222433 [info ] [MainThread]: Using profiles dir at /home/sipei/.dbt
+[0m18:45:48.223121 [info ] [MainThread]: Using profiles.yml file at /home/sipei/.dbt/profiles.yml
+[0m18:45:48.223564 [info ] [MainThread]: Using dbt_project.yml file at /home/sipei/Module 2/DS6-Module-2-Project-Group-6/dbt_project.yml
+[0m18:45:48.224029 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:45:48.224800 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.587916, "process_in_blocks": "0", "process_kernel_time": 0.229183, "process_mem_max_rss": "228184", "process_out_blocks": "8", "process_user_time": 1.706601}
+[0m18:45:48.225259 [debug] [MainThread]: Command `dbt debug` failed at 18:45:48.225140 after 0.59 seconds
+[0m18:45:48.225487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76c35598ad10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76c355905010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76c33bb4bfd0>]}
+[0m18:45:48.225775 [debug] [MainThread]: Flushing usage events
+[0m18:45:49.514133 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:46:40.579117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x772e231a9fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x772e232291d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x772e231aa0d0>]}
+
+
+============================== 18:46:40.582232 | f669aecf-10bd-4c18-bd0d-2c98db76352e ==============================
+[0m18:46:40.582232 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:46:40.583344 [debug] [MainThread]: running dbt with arguments {'hints_enabled': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'version_check': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'empty': 'None', 'target_path': 'None', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'profiles_dir': '/home/sipei/.dbt', 'maximum_seed_size_mib': '1', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'no_print': 'None', 'write_json': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_format': 'default'}
+[0m18:46:40.591441 [info ] [MainThread]: dbt version: 1.12.3
+[0m18:46:40.591842 [info ] [MainThread]: python version: 3.11.15
+[0m18:46:40.592050 [info ] [MainThread]: python path: /home/sipei/miniconda3/envs/elt_env/bin/python3.11
+[0m18:46:40.592239 [info ] [MainThread]: os info: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m18:46:41.138645 [info ] [MainThread]: Using profiles dir at /home/sipei/.dbt
+[0m18:46:41.138990 [info ] [MainThread]: Using profiles.yml file at /home/sipei/.dbt/profiles.yml
+[0m18:46:41.139190 [info ] [MainThread]: Using dbt_project.yml file at /home/sipei/Module 2/DS6-Module-2-Project-Group-6/dbt_project.yml
+[0m18:46:41.139413 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:46:41.139753 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.6132821, "process_in_blocks": "0", "process_kernel_time": 0.318612, "process_mem_max_rss": "228236", "process_out_blocks": "16", "process_user_time": 1.779266}
+[0m18:46:41.140111 [debug] [MainThread]: Command `dbt debug` failed at 18:46:41.140054 after 0.61 seconds
+[0m18:46:41.140336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x772e23231cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x772e23197010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x772e23197410>]}
+[0m18:46:41.140575 [debug] [MainThread]: Flushing usage events
+[0m18:46:42.451709 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:48:54.823162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e853651d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e852f7410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e852eb990>]}
+
+
+============================== 18:48:54.825189 | b0bd87f2-83ca-4d30-a332-b7eb9f27f917 ==============================
+[0m18:48:54.825189 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:48:54.825518 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'debug': 'False', 'log_path': 'logs', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'cache_selected_only': 'False', 'profiles_dir': '.', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'warn_error': 'None', 'hints_enabled': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'write_json': 'True', 'static_parser': 'True', 'empty': 'None', 'introspect': 'True', 'use_colors': 'True', 'log_cache_events': 'False', 'no_print': 'None', 'invocation_command': 'dbt debug --profiles-dir .', 'printer_width': '80'}
+[0m18:48:54.830582 [info ] [MainThread]: dbt version: 1.12.3
+[0m18:48:54.830815 [info ] [MainThread]: python version: 3.11.15
+[0m18:48:54.831035 [info ] [MainThread]: python path: /home/sipei/miniconda3/envs/elt_env/bin/python3.11
+[0m18:48:54.831225 [info ] [MainThread]: os info: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m18:48:54.831790 [info ] [MainThread]: Using profiles dir at .
+[0m18:48:54.831989 [info ] [MainThread]: Using profiles.yml file at ./profiles.yml
+[0m18:48:54.832133 [info ] [MainThread]: Using dbt_project.yml file at /home/sipei/Module 2/DS6-Module-2-Project-Group-6/dbt_project.yml
+[0m18:48:54.832477 [info ] [MainThread]: Configuration:
+[0m18:48:54.832615 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m18:48:54.832749 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:48:54.833004 [info ] [MainThread]: Required dependencies:
+[0m18:48:54.833285 [debug] [MainThread]: Executing "git --help"
+[0m18:48:54.835461 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:48:54.835939 [debug] [MainThread]: STDERR: "b''"
+[0m18:48:54.836183 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:48:54.837185 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:48:54.837669 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:48:54.838227 [info ] [MainThread]: dbt looked for a profiles.yml file in ./profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:48:54.838536 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/sipei/Module 2/DS6-Module-2-Project-Group-6/dbt_project.yml> not found
+
+[0m18:48:54.841492 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.06350501, "process_in_blocks": "0", "process_kernel_time": 0.144007, "process_mem_max_rss": "113588", "process_out_blocks": "24", "process_user_time": 0.906681}
+[0m18:48:54.841978 [debug] [MainThread]: Command `dbt debug` failed at 18:48:54.841903 after 0.06 seconds
+[0m18:48:54.842212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e852eb050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e852eb5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e852eb450>]}
+[0m18:48:54.842434 [debug] [MainThread]: Flushing usage events
+[0m18:48:55.889747 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:53:22.679209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75d3ef6814d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75d3ef699e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75d3ef69bc50>]}
+
+
+============================== 18:53:22.681071 | b90acff3-1cf0-4f0b-87c3-deeb05b04f7a ==============================
+[0m18:53:22.681071 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:53:22.681545 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'empty': 'None', 'write_json': 'True', 'log_format': 'default', 'static_parser': 'True', 'partial_parse': 'True', 'maximum_seed_size_mib': '1', 'hints_enabled': 'True', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '.', 'introspect': 'True', 'printer_width': '80', 'indirect_selection': 'eager', 'version_check': 'True', 'invocation_command': 'dbt debug --profiles-dir .', 'debug': 'False', 'target_path': 'None', 'quiet': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'no_print': 'None', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False'}
+[0m18:53:22.687251 [info ] [MainThread]: dbt version: 1.12.3
+[0m18:53:22.687502 [info ] [MainThread]: python version: 3.11.15
+[0m18:53:22.687721 [info ] [MainThread]: python path: /home/sipei/miniconda3/envs/elt_env/bin/python3.11
+[0m18:53:22.687983 [info ] [MainThread]: os info: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m18:53:22.688185 [info ] [MainThread]: Using profiles dir at .
+[0m18:53:22.688354 [info ] [MainThread]: Using profiles.yml file at ./profiles.yml
+[0m18:53:22.688552 [info ] [MainThread]: Using dbt_project.yml file at /home/sipei/Module 2/DS6-Module-2-Project-Group-6/dbt_project.yml
+[0m18:53:22.688748 [info ] [MainThread]: Configuration:
+[0m18:53:22.688921 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m18:53:22.689081 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:53:22.689258 [info ] [MainThread]: Required dependencies:
+[0m18:53:22.689448 [debug] [MainThread]: Executing "git --help"
+[0m18:53:22.690810 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:53:22.691044 [debug] [MainThread]: STDERR: "b''"
+[0m18:53:22.691179 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:53:22.691318 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:53:22.691516 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:53:22.691680 [info ] [MainThread]: dbt looked for a profiles.yml file in ./profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:53:22.691818 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/sipei/Module 2/DS6-Module-2-Project-Group-6/dbt_project.yml> not found
+
+[0m18:53:22.692994 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.058035664, "process_in_blocks": "0", "process_kernel_time": 0.196899, "process_mem_max_rss": "113548", "process_out_blocks": "16", "process_user_time": 0.91066}
+[0m18:53:22.693778 [debug] [MainThread]: Command `dbt debug` failed at 18:53:22.693589 after 0.06 seconds
+[0m18:53:22.694481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75d3ef6ba910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75d3ef5ff050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75d3ef5fee90>]}
+[0m18:53:22.694983 [debug] [MainThread]: Flushing usage events
+[0m18:53:24.465015 [debug] [MainThread]: An error was encountered while trying to flush usage events
