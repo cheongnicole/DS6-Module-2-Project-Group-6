@@ -314,3 +314,105 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m18:53:22.694481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75d3ef6ba910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75d3ef5ff050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75d3ef5fee90>]}
 [0m18:53:22.694983 [debug] [MainThread]: Flushing usage events
 [0m18:53:24.465015 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:19:51.870763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77e028f723d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77e028fede50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77e028f71dd0>]}
+
+
+============================== 20:19:51.877242 | 92446ba9-84a9-4fc1-9981-0ea8a62f6545 ==============================
+[0m20:19:51.877242 [info ] [MainThread]: Running with dbt=1.12.3
+[0m20:19:51.877961 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'indirect_selection': 'eager', 'introspect': 'True', 'version_check': 'True', 'printer_width': '80', 'invocation_command': 'dbt init olist_data_mart', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'hints_enabled': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs', 'debug': 'False', 'quiet': 'False', 'write_json': 'True', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'log_cache_events': 'False', 'use_colors': 'True', 'static_parser': 'True', 'target_path': 'None', 'cache_selected_only': 'False', 'profiles_dir': '/home/sipei/.dbt'}
+[0m20:19:51.900477 [debug] [MainThread]: Starter project path: /home/sipei/miniconda3/envs/elt_env/lib/python3.11/site-packages/dbt/include/starter_project
+[0m20:19:51.908927 [info ] [MainThread]: Setting up your profile.
+[0m20:23:08.587458 [info ] [MainThread]: Profile olist_data_mart written to /home/sipei/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m20:23:08.589795 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m20:23:08.590426 [info ] [MainThread]: dbt version: 1.12.3
+[0m20:23:08.590666 [info ] [MainThread]: python version: 3.11.15
+[0m20:23:08.590854 [info ] [MainThread]: python path: /home/sipei/miniconda3/envs/elt_env/bin/python3.11
+[0m20:23:08.591040 [info ] [MainThread]: os info: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m20:23:08.641062 [info ] [MainThread]: Using profiles dir at /home/sipei/.dbt
+[0m20:23:08.641603 [info ] [MainThread]: Using profiles.yml file at /home/sipei/.dbt/profiles.yml
+[0m20:23:08.642091 [info ] [MainThread]: Using dbt_project.yml file at /home/sipei/Module 2/DS6-Module-2-Project-Group-6/olist_data_mart/dbt_project.yml
+[0m20:23:08.642322 [info ] [MainThread]: adapter type: bigquery
+[0m20:23:08.642477 [info ] [MainThread]: adapter version: 1.12.0
+[0m20:23:08.706642 [info ] [MainThread]: Configuration:
+[0m20:23:08.707038 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:23:08.707229 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:23:08.707395 [info ] [MainThread]: Required dependencies:
+[0m20:23:08.707576 [debug] [MainThread]: Executing "git --help"
+[0m20:23:08.709054 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:23:08.709317 [debug] [MainThread]: STDERR: "b''"
+[0m20:23:08.709472 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:23:08.709632 [info ] [MainThread]: Connection:
+[0m20:23:08.709798 [info ] [MainThread]:   method: oauth
+[0m20:23:08.709939 [info ] [MainThread]:   database: project-d9da19d7-1ad9-4c5b-828
+[0m20:23:08.710073 [info ] [MainThread]:   execution_project: project-d9da19d7-1ad9-4c5b-828
+[0m20:23:08.710203 [info ] [MainThread]:   schema: olist
+[0m20:23:08.710335 [info ] [MainThread]:   location: US
+[0m20:23:08.710495 [info ] [MainThread]:   priority: interactive
+[0m20:23:08.710640 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m20:23:08.710778 [info ] [MainThread]:   reservation: None
+[0m20:23:08.710904 [info ] [MainThread]:   impersonate_service_account: None
+[0m20:23:08.711068 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m20:23:08.711230 [info ] [MainThread]:   job_retries: 1
+[0m20:23:08.711363 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m20:23:08.711512 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m20:23:08.711639 [info ] [MainThread]:   job_link_info_level_log: False
+[0m20:23:08.711783 [info ] [MainThread]:   timeout_seconds: 300
+[0m20:23:08.711907 [info ] [MainThread]:   client_id: None
+[0m20:23:08.712053 [info ] [MainThread]:   token_uri: None
+[0m20:23:08.712177 [info ] [MainThread]:   compute_region: None
+[0m20:23:08.712300 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m20:23:08.712709 [info ] [MainThread]:   gcs_bucket: None
+[0m20:23:08.712897 [info ] [MainThread]:   dataproc_batch: None
+[0m20:23:08.713173 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m20:23:08.812575 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m20:23:08.812914 [debug] [MainThread]: On debug: select 1 as id
+[0m20:23:08.813231 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:23:12.120741 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=project-d9da19d7-1ad9-4c5b-828&j=bq:US:748e123f-0fc0-41cf-980c-c8b15cdfc248&page=queryresults
+[0m20:23:12.765401 [debug] [MainThread]: SQL status: OK in 0.644 seconds
+[0m20:23:13.339283 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:23:13.339651 [info ] [MainThread]: [32mAll checks passed![0m
+[0m20:23:13.339888 [info ] [MainThread]: Your new dbt project "olist_data_mart" was created!
+Initialized new project in /home/sipei/Module 2/DS6-Module-2-Project-Group-6/olist_data_mart/olist_data_mart
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:23:13.340424 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 201.52982, "process_in_blocks": "552952", "process_kernel_time": 0.823327, "process_mem_max_rss": "256696", "process_out_blocks": "96", "process_user_time": 2.658826}
+[0m20:23:13.340776 [debug] [MainThread]: Command `dbt init` succeeded at 20:23:13.340706 after 201.53 seconds
+[0m20:23:13.341024 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:23:13.341257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77e02915b050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77e028fc7f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77e02a271810>]}
+[0m20:23:13.341493 [debug] [MainThread]: Flushing usage events
+[0m20:23:14.593693 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:37:22.476728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7940e0333850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7940e02a4910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7940e02a4950>]}
+
+
+============================== 20:37:22.481709 | 472d545c-1803-4f4a-8830-fae1fc6f98a1 ==============================
+[0m20:37:22.481709 [info ] [MainThread]: Running with dbt=1.12.3
+[0m20:37:22.482421 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'maximum_seed_size_mib': '1', 'quiet': 'False', 'empty': 'None', 'no_print': 'None', 'profiles_dir': '/home/sipei/.dbt', 'introspect': 'True', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'use_experimental_parser': 'False', 'write_json': 'True', 'indirect_selection': 'eager', 'version_check': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'warn_error': 'None', 'printer_width': '80', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'target_path': 'None', 'cache_selected_only': 'False', 'log_format': 'default'}
+[0m20:37:22.516310 [info ] [MainThread]: dbt version: 1.12.3
+[0m20:37:22.516677 [info ] [MainThread]: python version: 3.11.15
+[0m20:37:22.516904 [info ] [MainThread]: python path: /home/sipei/miniconda3/envs/elt_env/bin/python3.11
+[0m20:37:22.517090 [info ] [MainThread]: os info: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m20:37:24.251052 [info ] [MainThread]: Using profiles dir at /home/sipei/.dbt
+[0m20:37:24.251792 [info ] [MainThread]: Using profiles.yml file at /home/sipei/.dbt/profiles.yml
+[0m20:37:24.252424 [info ] [MainThread]: Using dbt_project.yml file at /home/sipei/Module 2/DS6-Module-2-Project-Group-6/dbt_project.yml
+[0m20:37:24.252759 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m20:37:24.253699 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.8430665, "process_in_blocks": "580672", "process_kernel_time": 0.777132, "process_mem_max_rss": "246324", "process_out_blocks": "8", "process_user_time": 2.376626}
+[0m20:37:24.254257 [debug] [MainThread]: Command `dbt debug` failed at 20:37:24.254183 after 1.84 seconds
+[0m20:37:24.254485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7940e029ed10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7940e029ce10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7940e029c1d0>]}
+[0m20:37:24.254707 [debug] [MainThread]: Flushing usage events
+[0m20:37:25.362114 [debug] [MainThread]: An error was encountered while trying to flush usage events
