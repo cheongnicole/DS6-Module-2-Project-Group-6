@@ -1,6 +1,7 @@
 {{ config(materialized='view') }}
 
-SELECT
+select
     product_category_name,
     product_category_name_english
-FROM {{ source('ingestion', 'product_category_name_translation') }}
+from {{ source('olist', 'product_category_name_translation') }}
+

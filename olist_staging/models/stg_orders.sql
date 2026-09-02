@@ -1,9 +1,11 @@
 {{ config(materialized='view') }}
 
-SELECT
+select
     order_id,
     customer_id,
-    CAST(order_purchase_timestamp AS TIMESTAMP) AS purchase_ts,
-    CAST(order_delivered_customer_date AS TIMESTAMP) AS delivered_ts,
-    order_status
-FROM {{ source('ingestion', 'olist_orders') }}
+    order_status,
+    cast(order_purchase_timestamp as timestamp) as purchase_ts,
+    cast(order_delivered_customer_date as timestamp) as delivered_customer_ts
+from {{ source('olist', 'olist_orders_dataset') }}
+
+

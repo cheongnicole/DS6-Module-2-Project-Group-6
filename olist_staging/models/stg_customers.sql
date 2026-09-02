@@ -1,9 +1,8 @@
 {{ config(materialized='view') }}
 
-SELECT
-    order_id,
+select
     customer_id,
-    CAST(order_purchase_timestamp AS TIMESTAMP) AS purchase_ts,
-    CAST(order_delivered_customer_date AS TIMESTAMP) AS delivered_ts,
-    order_status
-FROM {{ source('ingestion', 'olist_orders') }}
+    customer_unique_id,
+    customer_zip_code_prefix
+from {{ source('olist', 'olist_customers_dataset') }}
+
