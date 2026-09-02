@@ -1,8 +1,9 @@
 {{ config(materialized='view') }}
 
-SELECT
+select
     seller_id,
     seller_zip_code_prefix,
     seller_city,
     seller_state
-FROM {{ source('ingestion', 'olist_sellers') }}
+from {{ source('olist', 'olist_sellers_dataset') }}
+

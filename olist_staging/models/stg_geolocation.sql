@@ -6,4 +6,4 @@ SELECT
     geolocation_lng,
     geolocation_city,
     geolocation_state
-FROM {{ source('ingestion', 'olist_geolocation') }}
+from {{ source('olist', 'olist_geolocation_dataset') }}

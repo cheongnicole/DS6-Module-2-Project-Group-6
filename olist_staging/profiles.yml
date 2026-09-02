@@ -4,7 +4,7 @@ olist_staging:          # must match dbt_project.yml profile
     dev:
       type: bigquery
       method: oauth
-      project: rock-partition-505312-a6   # GCP project ID
-      dataset: ingestion                  # dataset name
+      project: your project-ID  # GCP project ID
+      dataset: olist                  # dataset name
       threads: 4
       location: US

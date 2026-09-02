@@ -1,9 +1,9 @@
 {{ config(materialized='view') }}
 
-SELECT
+select
     order_id,
     payment_sequential,
     payment_type,
     payment_installments,
     payment_value
-FROM {{ source('ingestion', 'olist_order_payments') }}
+from {{ source('olist', 'olist_order_payments_dataset') }}
