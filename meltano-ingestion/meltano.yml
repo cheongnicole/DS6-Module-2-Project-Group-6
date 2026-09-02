@@ -75,7 +75,7 @@ plugins:
       flattening_enabled: true
       flattening_max_depth: 1
       method: batch_job
-      project: rock-partition-505312-a6
+      project: project-7781a5d3-3f4e-4cd5-a43
       upsert: 'true'
       column_name_transforms:
         snake_case: true
