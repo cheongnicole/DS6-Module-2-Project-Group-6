@@ -22,16 +22,16 @@ Run all commands from the project root (`DS6-Module-2-Project-Group-6`) and poin
 
 ### Debug connection
 ```bash
-dbt debug --project-dir olist_staging --profiles-dir olist_staging
+dbt debug
 ```
 
 ### Run staging models
 ```bash
-dbt run --project-dir olist_staging --profiles-dir olist_staging
+dbt run 
 ```
 
 ### Run tests
 ```bash
-dbt test --project-dir olist_staging --profiles-dir olist_staging
+dbt test 
 ```
 
