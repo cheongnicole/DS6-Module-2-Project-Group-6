@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: fact_orders
+    description: "Order-level fact table"
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_customers')
+                field: customer_id
+
+  - name: dim_customers
+    description: "Dimension table for customers"
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_products
+    description: "Dimension table for products"
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_sellers
+    description: "Dimension table for sellers"
+    columns:
+      - name: seller_id
+        tests:
+          - unique
+          - not_null

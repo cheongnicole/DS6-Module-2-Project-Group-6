@@ -1,0 +1,11 @@
+olist_data_mart:   # must match dbt_project.yml profile name
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: Your GCP-ID   # your GCP project ID
+      dataset: olist                      # dbt will build staging + marts here
+      threads: 4
+      timeout_seconds: 300
+
