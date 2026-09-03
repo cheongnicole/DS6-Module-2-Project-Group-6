@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    database: project-7781a5d3-3f4e-4cd5-a43 # project
+    schema: olist_ingestion # dataset
+    tables:
+      - name: olist_orders
+      - name: olist_order_items
+      - name: olist_order_reviews
+      - name: olist_products
+      - name: product_category_name_translation

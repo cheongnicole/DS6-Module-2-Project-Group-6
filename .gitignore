@@ -5,9 +5,13 @@
 # Data directories
 data/
 
+# Logs
+logs/
+
 # Output directories
 output/
 
 # Python files
 create_olist_notebook.py
 create_instacart_notebook.py
+DBT_1.md

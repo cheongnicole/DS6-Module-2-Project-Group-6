@@ -314,3 +314,344 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m18:53:22.694481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75d3ef6ba910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75d3ef5ff050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75d3ef5fee90>]}
 [0m18:53:22.694983 [debug] [MainThread]: Flushing usage events
 [0m18:53:24.465015 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:01:32.539079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fc4310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fbd110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110063f90>]}
+
+
+============================== 00:01:32.541344 | c2ca06bf-1b66-4fa9-af94-8c641c8835a7 ==============================
+[0m00:01:32.541344 [info ] [MainThread]: Running with dbt=1.10.9
+[0m00:01:32.541617 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/redalpha04/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init DBT-1', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:02:22.060731 [debug] [MainThread]: Starter project path: /Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/include/starter_project
+[0m00:02:22.074229 [info ] [MainThread]: 
+Your new dbt project "DBT_1" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:02:22.074728 [info ] [MainThread]: Setting up your profile.
+[0m00:03:57.223397 [info ] [MainThread]: Profile DBT_1 written to /Users/redalpha04/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m00:03:57.226093 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 144.72186, "process_in_blocks": "0", "process_kernel_time": 4.246185, "process_mem_max_rss": "393134080", "process_out_blocks": "0", "process_user_time": 1.766829}
+[0m00:03:57.227234 [debug] [MainThread]: Command `dbt init` succeeded at 00:03:57.227116 after 144.72 seconds
+[0m00:03:57.227731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102e40410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x31131d190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102e41250>]}
+[0m00:03:57.228140 [debug] [MainThread]: Flushing usage events
+[0m00:03:58.511545 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:04:27.331198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1147657d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115866890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1158672d0>]}
+
+
+============================== 00:04:27.333221 | ca3b3017-eb88-4b3f-8bb6-e9a2ab986b84 ==============================
+[0m00:04:27.333221 [info ] [MainThread]: Running with dbt=1.10.9
+[0m00:04:27.333503 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/redalpha04/.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m00:04:27.341946 [info ] [MainThread]: dbt version: 1.10.9
+[0m00:04:27.342124 [info ] [MainThread]: python version: 3.11.14
+[0m00:04:27.342256 [info ] [MainThread]: python path: /Users/redalpha04/miniconda3/envs/elt/bin/python
+[0m00:04:27.342368 [info ] [MainThread]: os info: macOS-26.6.2-arm64-arm-64bit
+[0m00:04:28.956878 [info ] [MainThread]: Using profiles dir at /Users/redalpha04/.dbt
+[0m00:04:28.957128 [info ] [MainThread]: Using profiles.yml file at /Users/redalpha04/.dbt/profiles.yml
+[0m00:04:28.957261 [info ] [MainThread]: Using dbt_project.yml file at /Users/redalpha04/Desktop/DSAI/DS6-Module-2-Project-Group-6/dbt_project.yml
+[0m00:04:28.957416 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m00:04:28.957619 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.6626294, "process_in_blocks": "0", "process_kernel_time": 3.586004, "process_mem_max_rss": "400277504", "process_out_blocks": "0", "process_user_time": 1.968356}
+[0m00:04:28.957824 [debug] [MainThread]: Command `dbt debug` failed at 00:04:28.957793 after 1.66 seconds
+[0m00:04:28.957964 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115883650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115883910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x333066210>]}
+[0m00:04:28.958119 [debug] [MainThread]: Flushing usage events
+[0m00:04:30.085239 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:49:01.294714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c8417d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c8429d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c85bed0>]}
+
+
+============================== 13:49:01.296481 | ceeda296-b7cd-465a-bc29-b24b56678d8c ==============================
+[0m13:49:01.296481 [info ] [MainThread]: Running with dbt=1.10.9
+[0m13:49:01.296744 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/redalpha04/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:49:01.300563 [info ] [MainThread]: dbt version: 1.10.9
+[0m13:49:01.300722 [info ] [MainThread]: python version: 3.11.14
+[0m13:49:01.300862 [info ] [MainThread]: python path: /Users/redalpha04/miniconda3/envs/elt/bin/python
+[0m13:49:01.300984 [info ] [MainThread]: os info: macOS-26.6.2-arm64-arm-64bit
+[0m13:49:02.450364 [info ] [MainThread]: Using profiles dir at /Users/redalpha04/.dbt
+[0m13:49:02.450676 [info ] [MainThread]: Using profiles.yml file at /Users/redalpha04/.dbt/profiles.yml
+[0m13:49:02.450835 [info ] [MainThread]: Using dbt_project.yml file at /Users/redalpha04/Desktop/DSAI/DS6-Module-2-Project-Group-6/dbt_project.yml
+[0m13:49:02.451014 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m13:49:02.451238 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.1892986, "process_in_blocks": "0", "process_kernel_time": 3.985625, "process_mem_max_rss": "401113088", "process_out_blocks": "0", "process_user_time": 1.80113}
+[0m13:49:02.451465 [debug] [MainThread]: Command `dbt debug` failed at 13:49:02.451430 after 1.19 seconds
+[0m13:49:02.451616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c873f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb65c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103515210>]}
+[0m13:49:02.451793 [debug] [MainThread]: Flushing usage events
+[0m13:49:03.633370 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:49:56.692594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119ec4590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119f53990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119f53f90>]}
+
+
+============================== 13:49:56.694065 | 4f75c99c-0457-4f52-b0d8-17d31b8a8f8a ==============================
+[0m13:49:56.694065 [info ] [MainThread]: Running with dbt=1.10.9
+[0m13:49:56.694351 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/redalpha04/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt init list_dbt', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:49:56.699548 [debug] [MainThread]: Starter project path: /Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/include/starter_project
+[0m13:49:56.704389 [info ] [MainThread]: 
+Your new dbt project "list_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:49:56.704636 [info ] [MainThread]: Setting up your profile.
+[0m13:50:07.285627 [error] [MainThread]: Encountered an error:
+
+[0m13:50:07.289055 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/task/init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/task/init.py", line 242, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/click/termui.py", line 179, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/click/termui.py", line 162, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m13:50:07.291951 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 10.629627, "process_in_blocks": "0", "process_kernel_time": 0.121037, "process_mem_max_rss": "117080064", "process_out_blocks": "0", "process_user_time": 0.536092}
+[0m13:50:07.292381 [debug] [MainThread]: Command `dbt init` failed at 13:50:07.292301 after 10.63 seconds
+[0m13:50:07.292661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1018240d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119f40cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119ebf750>]}
+[0m13:50:07.292926 [debug] [MainThread]: Flushing usage events
+[0m13:50:08.707664 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:50:20.002124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b25ea50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b513f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b563d90>]}
+
+
+============================== 13:50:20.003694 | 26493076-2b22-466d-b9d8-697c23e7d899 ==============================
+[0m13:50:20.003694 [info ] [MainThread]: Running with dbt=1.10.9
+[0m13:50:20.003973 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/redalpha04/.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt init olist_dbt', 'send_anonymous_usage_stats': 'True'}
+[0m13:50:20.007897 [debug] [MainThread]: Starter project path: /Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/include/starter_project
+[0m13:50:20.010602 [info ] [MainThread]: 
+Your new dbt project "olist_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:50:20.010813 [info ] [MainThread]: Setting up your profile.
+[0m13:50:52.398883 [error] [MainThread]: Encountered an error:
+
+[0m13:50:52.401607 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/task/init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/task/init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/task/init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/task/init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/click/termui.py", line 179, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/click/termui.py", line 162, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m13:50:52.402456 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 32.430847, "process_in_blocks": "0", "process_kernel_time": 4.153102, "process_mem_max_rss": "398606336", "process_out_blocks": "0", "process_user_time": 1.682564}
+[0m13:50:52.403109 [debug] [MainThread]: Command `dbt init` failed at 13:50:52.403010 after 32.43 seconds
+[0m13:50:52.403513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b563d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10308c050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10308c310>]}
+[0m13:50:52.403913 [debug] [MainThread]: Flushing usage events
+[0m13:50:54.072865 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:50:56.352150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d0c4650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d153a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d153f90>]}
+
+
+============================== 13:50:56.353693 | 606cbe84-fd94-4b89-bd6d-77e5f03bf97f ==============================
+[0m13:50:56.353693 [info ] [MainThread]: Running with dbt=1.10.9
+[0m13:50:56.353971 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/redalpha04/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init olist_dbt', 'send_anonymous_usage_stats': 'True'}
+[0m13:50:56.357796 [info ] [MainThread]: A project called olist_dbt already exists here.
+[0m13:50:56.359160 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.037157416, "process_in_blocks": "0", "process_kernel_time": 0.125928, "process_mem_max_rss": "117964800", "process_out_blocks": "0", "process_user_time": 0.534124}
+[0m13:50:56.359388 [debug] [MainThread]: Command `dbt init` succeeded at 13:50:56.359345 after 0.04 seconds
+[0m13:50:56.359546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d113810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d153b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109cf8690>]}
+[0m13:50:56.359698 [debug] [MainThread]: Flushing usage events
+[0m13:50:57.577750 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:51:07.363190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116242250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1162539d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116253f90>]}
+
+
+============================== 13:51:07.364737 | 71faafc3-14ae-4940-bdcc-b5ac33bf6dad ==============================
+[0m13:51:07.364737 [info ] [MainThread]: Running with dbt=1.10.9
+[0m13:51:07.365019 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/redalpha04/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init olist_dbt', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:51:07.369018 [debug] [MainThread]: Starter project path: /Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/include/starter_project
+[0m13:51:07.371699 [info ] [MainThread]: 
+Your new dbt project "olist_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:51:07.371874 [info ] [MainThread]: Setting up your profile.
+[0m13:51:46.366834 [error] [MainThread]: Encountered an error:
+
+[0m13:51:46.369308 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/task/init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/task/init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/task/init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/task/init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/click/termui.py", line 179, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/click/termui.py", line 162, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m13:51:46.370106 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 39.037422, "process_in_blocks": "0", "process_kernel_time": 3.914865, "process_mem_max_rss": "399917056", "process_out_blocks": "0", "process_user_time": 1.938835}
+[0m13:51:46.370758 [debug] [MainThread]: Command `dbt init` failed at 13:51:46.370676 after 39.04 seconds
+[0m13:51:46.371122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116280110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116280190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116041e90>]}
+[0m13:51:46.371466 [debug] [MainThread]: Flushing usage events
+[0m13:51:47.935493 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:51:55.701005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1129e41d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121453c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121453f90>]}
+
+
+============================== 13:51:55.702570 | fd4ea804-3e06-4c07-a4c2-52cdeb89d608 ==============================
+[0m13:51:55.702570 [info ] [MainThread]: Running with dbt=1.10.9
+[0m13:51:55.702856 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/redalpha04/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init olist_dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:51:55.706811 [debug] [MainThread]: Starter project path: /Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/include/starter_project
+[0m13:51:55.709569 [info ] [MainThread]: 
+Your new dbt project "olist_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:51:55.709751 [info ] [MainThread]: Setting up your profile.
+[0m13:52:34.545373 [info ] [MainThread]: Profile olist_dbt written to /Users/redalpha04/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:52:34.546322 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 38.8759, "process_in_blocks": "0", "process_kernel_time": 4.098264, "process_mem_max_rss": "396967936", "process_out_blocks": "0", "process_user_time": 1.770791}
+[0m13:52:34.547099 [debug] [MainThread]: Command `dbt init` succeeded at 13:52:34.547000 after 38.88 seconds
+[0m13:52:34.547469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121480210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x34b889190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x34be4d350>]}
+[0m13:52:34.547819 [debug] [MainThread]: Flushing usage events
+[0m13:52:35.743825 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:52:51.490133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113f43a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113f41a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113f41e90>]}
+
+
+============================== 13:52:51.491643 | 916a632c-3520-4453-be6a-8fdd93daa4ec ==============================
+[0m13:52:51.491643 [info ] [MainThread]: Running with dbt=1.10.9
+[0m13:52:51.491926 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/redalpha04/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:52:51.495802 [info ] [MainThread]: dbt version: 1.10.9
+[0m13:52:51.495976 [info ] [MainThread]: python version: 3.11.14
+[0m13:52:51.496117 [info ] [MainThread]: python path: /Users/redalpha04/miniconda3/envs/elt/bin/python
+[0m13:52:51.496248 [info ] [MainThread]: os info: macOS-26.6.2-arm64-arm-64bit
+[0m13:52:52.658025 [info ] [MainThread]: Using profiles dir at /Users/redalpha04/.dbt
+[0m13:52:52.658322 [info ] [MainThread]: Using profiles.yml file at /Users/redalpha04/.dbt/profiles.yml
+[0m13:52:52.658480 [info ] [MainThread]: Using dbt_project.yml file at /Users/redalpha04/Desktop/DSAI/DS6-Module-2-Project-Group-6/dbt_project.yml
+[0m13:52:52.658654 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m13:52:52.658874 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.199364, "process_in_blocks": "0", "process_kernel_time": 3.933037, "process_mem_max_rss": "398639104", "process_out_blocks": "0", "process_user_time": 1.823891}
+[0m13:52:52.659101 [debug] [MainThread]: Command `dbt debug` failed at 13:52:52.659067 after 1.20 seconds
+[0m13:52:52.659253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113f43390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105374410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105374490>]}
+[0m13:52:52.659413 [debug] [MainThread]: Flushing usage events
+[0m13:52:53.821436 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:53:28.056290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106241a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10624fa90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10624ff90>]}
+
+
+============================== 13:53:28.057954 | 47d10ac7-6039-4869-b4ae-c95961e70f5d ==============================
+[0m13:53:28.057954 [info ] [MainThread]: Running with dbt=1.10.9
+[0m13:53:28.058234 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/redalpha04/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init olist_dbt', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:53:28.062195 [debug] [MainThread]: Starter project path: /Users/redalpha04/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/include/starter_project
+[0m13:53:28.065152 [info ] [MainThread]: 
+Your new dbt project "olist_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:53:28.065338 [info ] [MainThread]: Setting up your profile.
+[0m13:54:17.385823 [info ] [MainThread]: Profile olist_dbt written to /Users/redalpha04/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:54:17.386625 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 49.36043, "process_in_blocks": "0", "process_kernel_time": 4.162774, "process_mem_max_rss": "396591104", "process_out_blocks": "0", "process_user_time": 1.686288}
+[0m13:54:17.387231 [debug] [MainThread]: Command `dbt init` succeeded at 13:54:17.387151 after 49.36 seconds
+[0m13:54:17.387594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10624fb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10624fc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105574750>]}
+[0m13:54:17.387939 [debug] [MainThread]: Flushing usage events
+[0m13:54:18.977554 [debug] [MainThread]: An error was encountered while trying to flush usage events
