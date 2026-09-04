@@ -1,4 +1,3 @@
-
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
@@ -33,4 +32,11 @@ models:
   olist_dbt:
     # Config indicated by + and applies to all files under models/example/
     staging:
-      +materialized: view
+      +materialized: table
+      +schema: staging
+    core:
+      +materialized: table
+      +schema: core
+    datamart:
+      +materialized: table
+      +schema: datamart

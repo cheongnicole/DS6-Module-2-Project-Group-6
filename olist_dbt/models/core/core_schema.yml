@@ -1,53 +1,47 @@
 version: 2
 
 models:
-  # stg_orders table
-  - name: stg_orders
-    description: "Staging Orders"
+  # fct_orders table
+  - name: fct_orders
+    description: "Fact Orders"
     columns:
       - name: order_id
         description: "The PK for this table"
         data_tests:
           - unique
           - not_null
+      - name: order_status
+        tests:
+          - not_null
+      - name: order_total_price
+        tests:
+          - not_null
 
-  # stg_order_items table
-  - name: stg_order_items
-    description: "Staging Order Items"
+  # fct_order_items table
+  - name: fct_order_items
+    description: "Fact Order Items"
     columns:
       - name: order_id
         description: "The FK to Orders table"
         data_tests:
           - not_null
   
-  # stg_order_reviews table
-  - name: stg_order_reviews
-    description: "Staging Order Reviews"
+  # fct_order_reviews table
+  - name: fct_order_reviews
+    description: "Fact Order Reviews"
     columns:
       - name: review_id
         description: "The PK for this table"
         data_tests:
-          - unique
           - not_null
       - name: order_id
         description: "The FK to Orders table"
         data_tests:
           - not_null
 
-  # stg_product_category_name_translation table
-  - name: stg_product_category_name_translation
-    description: "Staging order items"
-    columns:
-      - name: category_name_portuguese
-        data_tests:
-          - not_null
-      - name: category_name_english
-        data_tests:
-          - not_null  
-
-  # stg_products table
-  - name: stg_products
-    description: "Staging Products"
+  # dim_products table
+  - name: dim_products
+    description: "Dimension Products"
     columns:
       - name: product_id
         description: "The PK for this table"
@@ -55,6 +49,6 @@ models:
           - unique
           - not_null
       - name: product_category_name
-        description: "In Portuguese"
+        description: "In English"
         data_tests:
           - not_null

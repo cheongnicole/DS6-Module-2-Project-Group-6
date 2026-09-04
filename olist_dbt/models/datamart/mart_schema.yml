@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  # mart_monthly_sales table: delivered orders only
+  - name: mart_monthly_sales
+    description: "Monthly Sales"
+    columns:
+      - name: month_start_date # e.g. 2017-03-01
+        description: "The PK for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: sales
+        description: "Sales this month"
+        tests:
+          - not_null
+      - name: order_count
+        description: "Number of orders this month"
+        tests:
+          - not_null
+
+  # mart_delivery_vs_reviews table: delivered orders only
+  - name: mart_delivery_vs_reviews
+    description: "Days to Deliver vs Reviews"
+    columns:
+      - name: order_id
+        description: "The FK to Orders table"
+        data_tests:
+          - not_null
+      - name: days_to_deliver 
+        description: "Days to Deliver"
+        data_tests:
+          - not_null
+      - name: review_score 
+        description: "Review Score"
+        data_tests:
+          - not_null
+
+  # mart_category_sales table: delivered orders only
+  - name: mart_category_sales
+    description: "Fact Order Reviews"
+    columns:
+      - name: product_category_name
+        description: "The PK for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: sales
+        description: "Category Sales"
+        data_tests:
+          - not_null

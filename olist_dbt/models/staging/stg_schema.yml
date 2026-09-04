@@ -1,0 +1,61 @@
+version: 2
+
+models:
+  # stg_orders table
+  - name: stg_orders
+    description: "Staging Orders"
+    columns:
+      - name: order_id
+        description: "The PK for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  # stg_order_items table
+  - name: stg_order_items
+    description: "Staging Order Items"
+    columns:
+      - name: order_id
+        description: "The FK to Orders table"
+        data_tests:
+          - not_null
+  
+  # stg_order_reviews table
+  - name: stg_order_reviews
+    description: "Staging Order Reviews"
+    columns:
+      - name: review_id
+        description: "The PK for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: order_id
+        description: "The FK to Orders table"
+        data_tests:
+          - unique
+          - not_null
+
+  # stg_product_category_name_translation table
+  - name: stg_product_category_name_translation
+    description: "Staging Product Category Name Translation"
+    columns:
+      - name: category_name_portuguese
+        data_tests:
+          - not_null
+      - name: category_name_english
+        data_tests:
+          - not_null  
+
+  # stg_products table
+  - name: stg_products
+    description: "Staging Products"
+    columns:
+      - name: product_id
+        description: "The PK for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: product_category_name
+        description: "In Portuguese"
+        data_tests:
+          - not_null

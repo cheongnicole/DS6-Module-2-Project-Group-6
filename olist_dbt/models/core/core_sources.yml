@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: staging
+    database: project-7781a5d3-3f4e-4cd5-a43 # project
+    schema: olist_dev_staging # dataset
+    tables:
+      - name: stg_orders
+      - name: stg_order_items
+      - name: stg_order_reviews
+      - name: stg_products

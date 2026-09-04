@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: core
+    database: project-7781a5d3-3f4e-4cd5-a43 # project
+    schema: olist_dev_core # dataset
+    tables:
+      - name: fct_orders
+      - name: fct_order_items
+      - name: fct_order_reviews
+      - name: dim_products

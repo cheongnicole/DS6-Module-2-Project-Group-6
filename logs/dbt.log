@@ -749,3 +749,19 @@ Internal Error
 [0m20:37:24.254707 [debug] [MainThread]: Flushing usage events
 [0m20:37:25.362114 [debug] [MainThread]: An error was encountered while trying to flush usage events
 >>>>>>> refs/remotes/origin/main
+[0m23:06:35.927793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112dc79d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112e64450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112e64f50>]}
+
+
+============================== 23:06:35.930224 | 425b2a82-93cd-4511-be49-2b1e38bb7b4c ==============================
+[0m23:06:35.930224 [info ] [MainThread]: Running with dbt=1.10.9
+[0m23:06:35.930517 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '.', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt build --target staging --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m23:06:35.930776 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/redalpha04/Desktop/DSAI/DS6-Module-2-Project-Group-6/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:06:35.932143 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 0.035794582, "process_in_blocks": "0", "process_kernel_time": 0.12627, "process_mem_max_rss": "119996416", "process_out_blocks": "0", "process_user_time": 0.535475}
+[0m23:06:35.932333 [debug] [MainThread]: Command `dbt build` failed at 23:06:35.932291 after 0.04 seconds
+[0m23:06:35.932485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112e66d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112e64dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112dc7b50>]}
+[0m23:06:35.932631 [debug] [MainThread]: Flushing usage events
+[0m23:06:37.073180 [debug] [MainThread]: An error was encountered while trying to flush usage events

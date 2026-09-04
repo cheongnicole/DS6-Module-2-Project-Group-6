@@ -1,7 +1,10 @@
+-- models/staging/stg_order_items.sql
+
 {{ config(materialized='table') }}
 
 SELECT
     p.product_id,
+    -- Patch empty categories to Uncategorized
     coalesce(nullif(trim(t.category_name_english), ''), 'Uncategorized') 
         as product_category_name,
     SAFE_CAST(p.product_name_lenght AS INT64) as product_name_length,
@@ -14,5 +17,6 @@ SELECT
 
 FROM {{ source('raw', 'olist_products') }} AS p
 
+-- Translate to English
 LEFT JOIN {{ ref('stg_product_category_name_translation') }} as t
     on lower(trim(p.product_category_name)) = lower(trim(t.category_name_portuguese))
