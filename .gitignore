@@ -11,7 +11,9 @@ logs/
 # Output directories
 output/
 
-# Python files
+# Compile
+compiled/
+run/
+
 create_olist_notebook.py
 create_instacart_notebook.py
-DBT_1.md
