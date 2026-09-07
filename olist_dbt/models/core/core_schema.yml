@@ -7,15 +7,41 @@ models:
     columns:
       - name: order_id
         description: "The PK for this table"
-        data_tests:
+        tests:
           - unique
           - not_null
       - name: order_status
+        description: "Order status"
         tests:
           - not_null
+          - dbt_expectations.expect_column_values_to_be_in_set:
+              arguments:
+                value_set:
+                  - created
+                  - approved
+                  - invoiced
+                  - processing
+                  - shipped
+                  - delivered
+                  - unavailable
+                  - canceled
+      - name: order_purchase_timestamp
+        description: "Order purchase timestamp"
+        tests:
+          - not_null
+      - name: order_delivered_customer_date
+        description: "Order delivered timestamp"
+        tests:
+          - dbt_expectations.expect_column_values_to_not_be_null:
+              arguments:
+                row_condition: "order_status = 'completed'"
       - name: order_total_price
+        description: "Sum of price of all items in this order"
         tests:
           - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              arguments:
+                min_value: 0
 
   # fct_order_items table
   - name: fct_order_items
@@ -23,21 +49,71 @@ models:
     columns:
       - name: order_id
         description: "The FK to Orders table"
-        data_tests:
+        tests:
           - not_null
+          - relationships:
+              arguments:
+                to: ref('fct_orders')
+                field: order_id
+      - name: order_item_id
+        description: "Sequential number identifying number of items included in the same order."
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              arguments:
+                min_value: 1
+      - name: product_id
+        description: "Product Id. FK to dim_products.product_id."
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_products')
+                field: product_id
+      - name: price
+        description: "Item price."
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              arguments:
+                min_value: 0
   
   # fct_order_reviews table
   - name: fct_order_reviews
     description: "Fact Order Reviews"
     columns:
       - name: review_id
-        description: "The PK for this table"
-        data_tests:
+        tests:
           - not_null
       - name: order_id
         description: "The FK to Orders table"
-        data_tests:
+        tests:
           - not_null
+          - relationships:
+              arguments:
+                to: ref('fct_orders')
+                field: order_id
+      - name: review_score
+        description: "Review score"
+        tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              arguments:
+                min_value: 1
+                max_value: 5
+      - name: review_answer_timestamp
+        description: "Review order timestamp"
+        tests:
+          - not_null
+      - name: latest_review
+        description: "Latest Review flag"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_in_set:
+              arguments:
+                value_set:
+                  - true
+                  - false
+                quote_values: false
 
   # dim_products table
   - name: dim_products
@@ -45,10 +121,10 @@ models:
     columns:
       - name: product_id
         description: "The PK for this table"
-        data_tests:
+        tests:
           - unique
           - not_null
       - name: product_category_name
         description: "In English"
-        data_tests:
+        tests:
           - not_null
