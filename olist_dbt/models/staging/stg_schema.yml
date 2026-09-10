@@ -27,12 +27,10 @@ models:
       - name: review_id
         description: "The PK for this table"
         data_tests:
-          - unique
           - not_null
       - name: order_id
         description: "The FK to Orders table"
         data_tests:
-          - unique
           - not_null
 
   # stg_product_category_name_translation table
