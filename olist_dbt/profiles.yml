@@ -14,3 +14,12 @@ olist_dbt:
       project: project-7781a5d3-3f4e-4cd5-a43 # enter your google project id
       threads: 1
       type: bigquery
+
+elementary:
+  outputs:
+    default:
+      type: "bigquery"
+      project: "project-7781a5d3-3f4e-4cd5-a43"
+      dataset: "olist_dev_elementary"
+      method: "oauth"  # Configure your auth method and add the required fields according to https://docs.getdbt.com/reference/warehouse-setups/bigquery-setup#authentication-methods
+      threads: 1
