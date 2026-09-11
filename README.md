@@ -128,14 +128,14 @@ The project is organised into modular components that support data ingestion, tr
 - Peak period: November 2017
 - Q4 performance shows a strong Black Friday seasonal effect
 
-**Customer Experience**
+**2. Customer Experience**
 - Delivery speed is strongly associated with review scores.
 - Average delivery time for one-star reviews: 20.9 days
 - Average delivery time for five-star reviews: 10.2 days
 - Difference: 10.7 days
 - Reducing fulfilment delays can improve ratings, loyalty, and repeat purchasing.
 
-**Revenue Concentration**
+**3. Revenue Concentration**
 - Revenue is concentrated in a relatively small number of categories.
 - Top 18 categories generate 81.3% of revenue
 - Leading categories include:
@@ -143,7 +143,7 @@ The project is organised into modular components that support data ingestion, tr
    - Watches and Gifts
    - Bed, Bath and Table
 
-**Geographic Concentration**
+**4. Geographic Concentration**
 - Customers and revenue are concentrated in:
    - São Paulo
    - Rio de Janeiro
